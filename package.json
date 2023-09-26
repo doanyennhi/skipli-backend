@@ -1,0 +1,14 @@
+{
+  "name": "skipli-backend",
+  "version": "1.0.0",
+  "description": "Express backend of Skipli website for coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Doan Yen Nhi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
