@@ -4,12 +4,14 @@
   "description": "Express backend of Skipli website for coding challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Doan Yen Nhi",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.18.2",
-    "firebase": "^10.4.0"
+    "firebase": "^10.4.0",
+    "twilio": "^4.18.0"
   }
 }
