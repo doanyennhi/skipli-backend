@@ -10,14 +10,14 @@ const AccessCodeController = {
             return res.status(200).json(accessCode)
         }
     },
-    validateAccessCode: async (res, req) => {
+    validateAccessCode: async (req, res) => {
         // check if code entered matches the code sent via sms
         const isValid = await AccessCodeService.validateAccessCode(req.body["access_code"], req.body["phone_num"])
 
-        if (isValid) {
-            return res.status(200).json("The code entered is valid.")
+        if (isValid.success) {
+            return res.status(200).json(isValid)
         } else {
-            return res.status(404).json("The code does not match.")
+            return res.status(404).json(isValid)
         }
     }
 };
